@@ -6,6 +6,8 @@ import File from '../models/File';
 import CreateAppointmentService from '../services/CreateAppointmentService';
 import CancelAppointmentService from '../services/CancelAppointmentService';
 
+import Cache from '../../lib/Cache';
+
 class AppointmentController {
   async index(req, res) {
     const { page = 1 } = req.query;
