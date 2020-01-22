@@ -6,6 +6,8 @@ import Appointment from '../models/Appointment';
 
 import Notification from '../schemas/Notification';
 
+import Cache from '../../lib/Cache';
+
 class CreateAppointmentService {
   async run({ provider_id, date, user_id }) {
     const checkProvider = User.findOne({
@@ -50,6 +52,8 @@ class CreateAppointmentService {
       content: `Novo agendamento de ${user.name} para ${formattedDate}`,
       user: provider_id
     });
+
+    await Cache.invalidatePrefix(`user:${user_id}:appointments`);
 
     return appointment;
   }

@@ -1,6 +1,5 @@
 import User from '../models/User';
 import Appointment from '../models/Appointment';
-import User from '../models/User';
 import File from '../models/File';
 
 import CreateAppointmentService from '../services/CreateAppointmentService';
@@ -11,6 +10,14 @@ import Cache from '../../lib/Cache';
 class AppointmentController {
   async index(req, res) {
     const { page = 1 } = req.query;
+
+    const cachedKey = `user:${req.userID}:appointments:${page}`;
+    const cached = await Cache.get(cachedKey);
+
+    if (cached) {
+      return res.json(cached);
+    }
+
     const appointments = await Appointment.findAll({
       where: {
         user_id: req.userID,

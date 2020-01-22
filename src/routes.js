@@ -38,7 +38,7 @@ routes.post(
 );
 routes.delete('/appointments/:id', AppointmentController.delete);
 
-routes.get('/providers', ProviderController.providers);
+routes.get('/providers', ProviderController.index);
 routes.get('/providers/:providerId/available', AvailableController.index);
 
 routes.get('/schedules', ScheduleController.index);
