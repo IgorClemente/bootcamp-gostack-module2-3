@@ -38,18 +38,26 @@ Aplicação Backend desenvolvida no modelo RestFul - Epara rodar no servidor Nod
 
 ### Rotas
 
-- `POST /users`: Rota responsável por criar o usuário dentro da plataforma
+- `POST /users`: Rota responsável por criar o usuário dentro da plataforma, utilize os seguintes parâmetros: `name`: Nome Completo, `email`: E-mail no formato `example@example.com`, `password`: Senha com 6 digítos, alfanumérica, `provider`: `true` ou `false` indicando se o usuário criado é provedor de serviço ou não. `Exemplo`:
 
 ```js
 {
-	"name" : "Igor Clemente",
-	"email" : "igor.clm@gmail.com",
-	"password" : "1234567",
+	"name" : "Nome Completo",
+	"email" : "teste@teste.com",
+	"password" : "123456",
 	"provider": true
 }
 ```
 
-- `POST /sessions`: Rota responsável por criar a sessão de um usuário já cadastrado;
+- `POST /sessions`: Rota responsável por criar a sessão de um usuário já cadastrado e obter o token de sessão;
+
+```js
+{
+	"name" : "Nome Completo",
+	"email" : "teste@teste.com",
+	"password" : "123456"
+}
+```
 
 - `PUT /users`: Rota responsável por atualizar o perfil de um usuário dentro da plataforma;
 
