@@ -38,7 +38,7 @@ Aplicação Backend desenvolvida no modelo RestFul - Epara rodar no servidor Nod
 
 ### Rotas
 
-- `POST /users`: Rota responsável por criar o usuário dentro da plataforma, utilize os seguintes parâmetros: `name`: Nome Completo, `email`: E-mail no formato `example@example.com`, `password`: Senha com 6 digítos, alfanumérica, `provider`: `true` ou `false` indicando se o usuário criado é provedor de serviço ou não. `Exemplo`:
+- `POST /users`: Rota responsável por criar o usuário dentro da plataforma, utilize os seguintes parâmetros: `name` : Nome Completo, `email` : E-mail no formato `example@example.com`, `password` : Senha com 6 digítos, alfanumérica, `provider` : `true` ou `false` indicando se o usuário criado é provedor de serviço ou não. `Exemplo`:
 
 ```js
 {
@@ -49,7 +49,7 @@ Aplicação Backend desenvolvida no modelo RestFul - Epara rodar no servidor Nod
 }
 ```
 
-- `POST /sessions`: Rota responsável por criar a sessão de um usuário já cadastrado e obter o token de sessão;
+- `POST /sessions`: Rota responsável por criar a sessão de um usuário já cadastrado e obter o token de sessão. Utilize os seguintes parâmetros: `name` : Nome Completo, `email` : E-mail no formato `example@example.com`, `password` : Senha com 6 digítos, alfanumérica. `Exemplo`:
 
 ```js
 {
@@ -59,13 +59,23 @@ Aplicação Backend desenvolvida no modelo RestFul - Epara rodar no servidor Nod
 }
 ```
 
-- `PUT /users`: Rota responsável por atualizar o perfil de um usuário dentro da plataforma;
+- `PUT /users`: Rota responsável por atualizar o perfil de um usuário dentro da plataforma. Utilize os seguintes parâmetros: `name` : Nome Completo, `email` : E-mail no formato `example@example.com`, `password` : Senha com 6 digítos, alfanumérica, `oldPassword` : Senha com 6 digítos, alfanumérica, `confirmPassword` : Senha com 6 digítos, alfanumérica. `Exemplo`:
 
-- `POST /files`: Rota responsável por realizar o envio de imagens;
+```js
+{
+	"name" : "Nome Completo",
+	"email" : "teste@teste.com",
+	"oldPassword" : "123456",
+	"password" : "123456",
+	"confirmPassword" : "123456"
+}
+```
 
-- `GET /appointments`: Rota responsável por listar todos os agendamentos para o usuário com um token de sessão;
+- `POST /files`: Rota responsável por realizar o envio de imagens via multpart-form. Utilize o seguinte parâmetro no multpart: `file` : Data do arquivo de imagem.
 
-- `POST /appointments`: Rota responsável por criar agendamentos dentro da plataforma;
+- `GET /appointments`: Rota responsável por listar todos os agendamentos para o usuário com um token de sessão válido.
+
+- `POST /appointments`: Rota responsável por criar agendamentos dentro da plataforma.
 
 - `DELETE /appointments/:id`: Rota responsável por cancelar o usuário dentro da plataforma;
 
