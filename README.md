@@ -28,7 +28,7 @@
 
 <p align="center">
   <a href="#rocket-objetivo">Sobre o desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-entrega">Entrega</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#starter-iniciando-aplicação">Iniciando aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
@@ -38,7 +38,16 @@ Aplicação Backend desenvolvida no modelo RestFul - Epara rodar no servidor Nod
 
 ### Rotas
 
-- `POST /users`: Rota responsável por criar o usuário dentro da plataforma;
+- `POST /users`: Rota responsável por criar o usuário dentro da plataforma
+
+```js
+{
+	"name" : "Igor Clemente",
+	"email" : "igor.clm@gmail.com",
+	"password" : "1234567",
+	"provider": true
+}
+```
 
 - `POST /sessions`: Rota responsável por criar a sessão de um usuário já cadastrado;
 
@@ -62,7 +71,7 @@ Aplicação Backend desenvolvida no modelo RestFul - Epara rodar no servidor Nod
 
 - `PUT /notifications/:id`: A rota deve deletar o projeto com o `id` presente nos parâmetros da rota;
 
-### Exemplo
+### :starter: Iniciando aplicação
 
 Se eu chamar a rota `POST /projects` repassando `{ id: 1, title: 'Novo projeto' }` e a rota `POST /projects/1/tasks` com `{ title: 'Nova tarefa' }`, meu array de projetos deve ficar assim:
 
@@ -78,7 +87,7 @@ Se eu chamar a rota `POST /projects` repassando `{ id: 1, title: 'Novo projeto' 
 
 ## :memo: Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
 

@@ -36,6 +36,7 @@ routes.post(
   validateAppointmentStore,
   AppointmentController.store
 );
+
 routes.delete('/appointments/:id', AppointmentController.delete);
 
 routes.get('/providers', ProviderController.index);
