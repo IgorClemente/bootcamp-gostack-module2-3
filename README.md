@@ -102,16 +102,14 @@ Aplicação Backend desenvolvida no modelo RestFul - Epara rodar no servidor Nod
 
 Para executar a aplicação em ambiente de `DESENVOLVIMENTO`, primeiro crie um arquivo na raiz do projeto chamado `.env` para fazer a configuração de todas as váriaveis de ambiente. Copie todo o conteudo do arquivo `.env_example` para esse novo arquivo e altere cada variável de acordo com seu ambiente.
 
-Após alterar as variáveis de ambiente, execute o seguinte dentro da pasta do projeto:
+Após alterar as variáveis de ambiente, execute o seguinte comando na raíz do projeto:
 
-```js
-[
-  {
-    id: '1',
-    title: 'Novo projeto',
-    tasks: ['Nova tarefa']
-  }
-];
+```bash
+yarn
+```
+
+```bash
+npm install
 ```
 
 ## :memo: Licença
