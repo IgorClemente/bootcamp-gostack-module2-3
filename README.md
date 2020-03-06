@@ -105,13 +105,25 @@ Para executar a aplicação em ambiente de `DESENVOLVIMENTO`, primeiro crie um a
 Após alterar as variáveis de ambiente, execute o seguinte comando na raíz do projeto:
 
 ```bash
-yarn
+  yarn
 ```
 
 ou
 
 ```bash
-npm install
+  npm install
+```
+
+Agora, vamos dar um `start` na aplicação, execute o seguinte comando:
+
+```bash
+  yarn dev
+```
+
+A aplicação principal está funcionando, agora você precisa iniciar a `queue` que realiza o envio de e-mails. Execute esse comando:
+
+```bash
+  yarn queue
 ```
 
 ## :memo: Licença
