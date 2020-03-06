@@ -73,17 +73,26 @@ Aplicação Backend desenvolvida no modelo RestFul - Epara rodar no servidor Nod
 
 - `POST /files`: Rota responsável por realizar o envio de imagens via multpart-form. Utilize o seguinte parâmetro no multpart: `file` : Data do arquivo de imagem.
 
-- `GET /appointments`: Rota responsável por listar todos os agendamentos para o usuário com um token de sessão válido.
+- `GET /appointments`: Rota responsável por listar todos os agendamentos para o usuário utilizando um token de sessão válido. O resultado pode ser páginado, passando o parâmetro de query string: `page` : Número da página, começando em 1.
 
-- `POST /appointments`: Rota responsável por criar agendamentos dentro da plataforma.
+- `POST /appointments`: Rota responsável por criar agendamentos dentro da plataforma. Utilize os seguintes parâmetros: `provider_id` : ID identificador do provedor de serviços, `date` : Data válida para marcar o agendamento. `Exemplo`:
 
-- `DELETE /appointments/:id`: Rota responsável por cancelar o usuário dentro da plataforma;
+```js
+{
+	"provider_id" : 3,
+	"date" : "2020-02-28T10:00:00"
+}
+```
 
-- `POST /providers`: Rota responsável por listar todos os provedores de serviços;
+- `DELETE /appointments/:id`: Rota responsável por cancelar o usuário dentro da plataforma. Utilize o parâmetro: `id` : ID identificador do agendamento que você deseja cancelar.
 
-- `GET /providers/:providerId/available`: Rota responsável por listar toda a agenda de uma determinado provedor, através do ID identificador;
+- `POST /providers`: Rota responsável por listar todos os provedores de serviços.
 
-- `GET /schedules`: A rota deve deletar o projeto com o `id` presente nos parâmetros da rota;
+- `GET /providers/:providerId/available`: Rota responsável por listar toda a agenda de um determinado provedor, através do ID identificador. Utilize o parâmetro: `providerId` : ID identificador do provedor de serviço.
+
+- `GET /schedules`: Rota responsável por listar todos os horários disponíveis por data. Utilize o parâmetro de query string: `date` : Data da pesquisa. `Exemplo`:
+
+`http://localhost/schedules?date=2019-11-01T00%3A00-03%3A00`
 
 - `GET /notifications`: A rota deve deletar o projeto com o `id` presente nos parâmetros da rota;
 
