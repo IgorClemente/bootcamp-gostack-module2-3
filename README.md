@@ -28,7 +28,7 @@
 
 <p align="center">
   <a href="#rocket-objetivo">Sobre o desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#starter-iniciando-aplicação">Iniciando aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#start-iniciando-aplicação">Iniciando aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
@@ -98,7 +98,7 @@ Aplicação Backend desenvolvida no modelo RestFul - Epara rodar no servidor Nod
 
 - `PUT /notifications/:id`: Rota responsável por marcar uma notificação como lida. Utilize o seguinte parâmetro: `id` : ID identificador da notificação.
 
-## :starter: Iniciando a aplicação
+## :start: Iniciando a aplicação
 
 Se eu chamar a rota `POST /projects` repassando `{ id: 1, title: 'Novo projeto' }` e a rota `POST /projects/1/tasks` com `{ title: 'Nova tarefa' }`, meu array de projetos deve ficar assim:
 
