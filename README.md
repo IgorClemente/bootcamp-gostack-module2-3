@@ -94,11 +94,11 @@ Aplicação Backend desenvolvida no modelo RestFul - Epara rodar no servidor Nod
 
 `http://localhost/schedules?date=2019-11-01T00%3A00-03%3A00`
 
-- `GET /notifications`: A rota deve deletar o projeto com o `id` presente nos parâmetros da rota;
+- `GET /notifications`: Rota responsável por listar todas as notificações disponíveis.
 
-- `PUT /notifications/:id`: A rota deve deletar o projeto com o `id` presente nos parâmetros da rota;
+- `PUT /notifications/:id`: Rota responsável por marcar uma notificação como lida. Utilize o seguinte parâmetro: `id` : ID identificador da notificação.
 
-### :starter: Iniciando aplicação
+## :starter: Iniciando a aplicação
 
 Se eu chamar a rota `POST /projects` repassando `{ id: 1, title: 'Novo projeto' }` e a rota `POST /projects/1/tasks` com `{ title: 'Nova tarefa' }`, meu array de projetos deve ficar assim:
 
