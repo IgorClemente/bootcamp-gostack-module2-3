@@ -28,7 +28,7 @@
 
 <p align="center">
   <a href="#rocket-objetivo">Sobre o desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#start-iniciando-aplicação">Iniciando aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#hammer-iniciando-a-aplicação">Iniciando aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
@@ -98,7 +98,7 @@ Aplicação Backend desenvolvida no modelo RestFul - Epara rodar no servidor Nod
 
 - `PUT /notifications/:id`: Rota responsável por marcar uma notificação como lida. Utilize o seguinte parâmetro: `id` : ID identificador da notificação.
 
-## :rocket: Iniciando a aplicação
+## :hammer: Iniciando a aplicação
 
 Para executar a aplicação em ambiente de `DESENVOLVIMENTO`, primeiro crie um arquivo na raiz do projeto chamado `.env` para fazer a configuração de todas as váriaveis de ambiente. Copie todo o conteudo do arquivo `.env_example` para esse novo arquivo e altere cada variável de acordo com seu ambiente.
 
