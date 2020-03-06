@@ -108,11 +108,15 @@ Após alterar as variáveis de ambiente, execute o seguinte comando na raíz do 
   yarn
 ```
 
+Se você estiver utilizando o `yarn`
+
 ou
 
 ```bash
   npm install
 ```
+
+Se você estiver utilizando o `npm`
 
 Agora, vamos dar um `start` na aplicação, execute o seguinte comando:
 
