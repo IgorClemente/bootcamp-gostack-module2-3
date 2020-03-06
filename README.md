@@ -100,7 +100,9 @@ Aplicação Backend desenvolvida no modelo RestFul - Epara rodar no servidor Nod
 
 ## :start: Iniciando a aplicação
 
-Se eu chamar a rota `POST /projects` repassando `{ id: 1, title: 'Novo projeto' }` e a rota `POST /projects/1/tasks` com `{ title: 'Nova tarefa' }`, meu array de projetos deve ficar assim:
+Para executar a aplicação em ambiente de `DESENVOLVIMENTO`, primeiro crie um arquivo na raiz do projeto chamado `.env` para fazer a configuração de todas as váriaveis de ambiente. Copie todo o conteudo do arquivo `.env_example` para esse novo arquivo e altere cada variável de acordo com seu ambiente.
+
+Após alterar as variáveis de ambiente, execute o seguinte dentro da pasta do projeto:
 
 ```js
 [
