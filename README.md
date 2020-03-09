@@ -34,7 +34,7 @@
 
 ## :rocket: Objetivo
 
-Aplicação Backend desenvolvida no modelo RestFul - Epara rodar no servidor NodeJS [Express](https://expressjs.com/pt-br/).
+Aplicação Backend desenvolvida no modelo RestFul - executa no servidor NodeJS [NodeJS](https://nodejs.org/en/).
 
 ### Rotas
 
