@@ -27,14 +27,14 @@
 </p>
 
 <p align="center">
-  <a href="#rocket-objetivo">Objetivo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-descrição">Objetivo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#hammer-iniciando-a-aplicação">Iniciando aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
-## :rocket: Objetivo
+## :rocket: Descrição
 
-Aplicação Backend desenvolvida no modelo RestFul - executa no servidor NodeJS [NodeJS](https://nodejs.org/en/).
+Aplicação Backend desenvolvida no modelo RestFul para Barbearias, o cliente através do aplicativo Mobile busca um horário disponível na agenda do prestador de serviços, no caso, o Barbeiro. O Barbeiro tem acesso a sua agenda através da interface WEB, onde ele visualiza quem ele vai atender em determinado horário - Essa aplicação executa no servidor [NodeJS](https://nodejs.org/en/).
 
 ### Rotas
 
@@ -100,8 +100,7 @@ Aplicação Backend desenvolvida no modelo RestFul - executa no servidor NodeJS 
 
 ## :hammer: Iniciando a aplicação
 
-`AMBIENTE DE DESENVOLVIMENTO` :
-Para executar a aplicação em ambiente de `DESENVOLVIMENTO`, primeiro crie um arquivo na raiz do projeto chamado `.env` para fazer a configuração de todas as váriaveis de ambiente. Copie todo o conteudo do arquivo `.env_example` para esse novo arquivo e altere cada variável de acordo com seu ambiente.
+Para executar a aplicação em ambiente de `DESENVOLVIMENTO` ou `PRODUÇÃO`, primeiro crie um arquivo na raiz do projeto chamado `.env` para fazer a configuração de todas as váriaveis de ambiente. Copie todo o conteúdo do arquivo `.env_example`, Dentro do novo arquivo, altere cada variável de acordo com seu ambiente. E de não esqueça de alterar a váriavel: `NODE_ENV`, `development` ou `production`.
 
 Após alterar as variáveis de ambiente, execute o seguinte comando na raíz do projeto:
 
@@ -131,7 +130,7 @@ A aplicação principal está funcionando, agora você precisa iniciar a `queue`
   yarn queue
 ```
 
-`AMBIENTE DE PRODUÇÃO` :
+`EXEMPLO DA APLICAÇÃO RODANDO EM PRODUÇÃO` : http://138.197.65.2
 
 ## :memo: Licença
 
